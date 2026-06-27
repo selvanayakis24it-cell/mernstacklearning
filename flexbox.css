@@ -1,0 +1,19 @@
+
+.flexContainer{
+    border:5px solid red;
+    height:90vh;
+    display:flex;
+    gap:100px;
+    justify-content:space-between; 
+    /*Main axis*/
+    align-items:center;
+    flex-direction:column-reverse;
+    /*Cross axis*/
+}
+.flexItem{
+    height: 100px;
+    width: 100px;
+    border:10px solid rgb(251, 255, 0);
+    color:rgb(0, 242, 255);
+    background-color: rgb(250, 5, 225);
+}

@@ -1,0 +1,24 @@
+nav{
+    background-color: black;
+    color: white;
+}
+
+.cards{
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+.cardscontainer{
+    height:90vh;
+}
+.center-container{
+    height:300px;
+    background-color:lightgray;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: blue;
+}

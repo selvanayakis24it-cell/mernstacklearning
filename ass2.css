@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 60px 1fr 50px;
+
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+
+    background-color: #f1f3f6;
+}
+
+/* Navbar */
+.navbar{
+    grid-area: navbar;
+    background-color: #0a1233;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+.navbar input{
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Sidebar */
+.sidebar{
+    grid-area: sidebar;
+    background-color: #1d2745;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 20px;
+    font-weight: bold;
+}
+
+.sidebar div{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar div:hover{
+    background-color: #2f3c63;
+}
+
+/* Main Grid */
+.main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 90px;
+    gap: 15px;
+}
+
+/* Cards */
+.card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Wide Card */
+.wide{
+    grid-column: span 2;
+}
+
+/* Tall Card */
+.tall{
+    grid-row: span 2;
+}
+
+/* Nested Grid */
+.nested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.nested div{
+    background-color: #dde3e9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer{
+    grid-area: footer;
+    background-color: #0a1233;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

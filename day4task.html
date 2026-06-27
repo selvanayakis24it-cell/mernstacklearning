@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./day4task.css">
+  <title>Product Manager</title>
+</head>
+<body>
+  <header class="header">🛒 Product Manager</header>
+
+  <!-- Add Product Form -->
+  <div class="first">
+    <input type="text" id="product" placeholder="Enter product">
+    <input type="number" id="price" placeholder="Price">
+    <input type="text" id="Electronics" placeholder="Category">
+    <input type="checkbox" id="instock">
+    <label for="instock">In Stock</label>
+    <button class="clr" id="addProduct">Add Product</button>
+  </div>
+
+  <!-- Search / Filter / Sort -->
+  <div class="second">
+    <input type="text" id="SearchProduct" placeholder="Search Product">
+    
+    <!-- Dropdown filter -->
+    <select id="all">
+      <option value="All">All</option>
+      <option value="In Stock">In Stock</option>
+      <option value="Out of Stock">Out of Stock</option>
+    </select>
+
+    <button class="clr" id="p1">Price ↗️</button>
+    <button class="clr" id="p2">Price ↘️</button>
+  </div>
+
+  <!-- Total Value -->
+  <h3>Total Value: ₨ <span id="totalValue">0</span></h3>
+
+  <!-- Product Cards Container -->
+  <div class="cards-container" id="productContainer">
+    <!-- JS will insert product cards here -->
+  </div>
+
+  <script src="./day4task.js"></script>
+</body>
+</html>

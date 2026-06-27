@@ -1,0 +1,29 @@
+.Container{
+    height: 80vh;
+    width:40%;
+    border:2px solid red;
+}
+.item{
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+}
+.sticky{
+    position: sticky;
+    top: 10px;
+}
+.fixed{
+    position: fixed;  
+    bottom:30px;
+    right: 10px;
+
+}
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
